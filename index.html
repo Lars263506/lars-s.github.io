@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lars – Software Engineer</title>
+  <meta name="description" content="Personal website of Lars, Full-Stack Software Engineer. Ask the AI assistant about my CV." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ── Navigation ── -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="logo">Lars</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ── Hero ── -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="avatar">👨‍💻</div>
+    <h1>Lars</h1>
+    <p class="title">Full-Stack Software Engineer</p>
+    <p class="tagline">Building scalable web applications with a passion for clean code and great user experiences.</p>
+    <div class="hero-links">
+      <a href="mailto:lars@example.com" class="btn btn-outline">✉️ Email</a>
+      <a href="https://github.com/Lars263506" class="btn btn-outline" target="_blank" rel="noopener">🐙 GitHub</a>
+      <a href="https://linkedin.com/in/lars" class="btn btn-outline" target="_blank" rel="noopener">💼 LinkedIn</a>
+      <button class="btn btn-white" onclick="document.getElementById('chat-panel').classList.remove('hidden'); document.getElementById('chat-input').focus();">
+        🤖 Ask AI about my CV
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ── Main content ── -->
+<main>
+  <!-- Left column -->
+  <div class="main-col">
+
+    <!-- About -->
+    <section id="about" class="card">
+      <h2><span class="icon">👤</span> About Me</h2>
+      <p class="about-text">
+        Passionate full-stack software engineer with 5+ years of experience building scalable web applications.
+        I love turning complex problems into elegant, maintainable solutions. I thrive in collaborative environments
+        and enjoy mentoring junior developers. When I'm not coding, I enjoy hiking in the German countryside and
+        landscape photography.
+      </p>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="card">
+      <h2><span class="icon">💼</span> Experience</h2>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <span class="exp-role">Senior Software Engineer</span>
+          <span class="exp-period">2022 – Present</span>
+        </div>
+        <div class="exp-company">TechCorp GmbH · Berlin, Germany</div>
+        <p class="exp-desc">
+          Led development of a microservices architecture serving 500K+ daily active users.
+          Reduced API response times by 40% through strategic caching. Mentored 3 junior engineers
+          and drove adoption of CI/CD best practices.
+        </p>
+        <div class="exp-tags">
+          <span class="tag">TypeScript</span>
+          <span class="tag">React</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">Kubernetes</span>
+          <span class="tag">AWS</span>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <span class="exp-role">Software Engineer</span>
+          <span class="exp-period">2020 – 2022</span>
+        </div>
+        <div class="exp-company">StartupXYZ · Hamburg, Germany</div>
+        <p class="exp-desc">
+          Built and shipped full-stack features for a B2B SaaS platform. Integrated third-party
+          payment and analytics APIs, improving user conversion by 18%.
+        </p>
+        <div class="exp-tags">
+          <span class="tag">Vue.js</span>
+          <span class="tag">Python</span>
+          <span class="tag">Django</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">Redis</span>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <span class="exp-role">Junior Developer</span>
+          <span class="exp-period">2018 – 2020</span>
+        </div>
+        <div class="exp-company">WebAgency Berlin · Berlin, Germany</div>
+        <p class="exp-desc">
+          Developed client websites and internal tools. Built custom WordPress themes and
+          JavaScript-heavy landing pages for marketing campaigns.
+        </p>
+        <div class="exp-tags">
+          <span class="tag">JavaScript</span>
+          <span class="tag">PHP</span>
+          <span class="tag">WordPress</span>
+          <span class="tag">CSS</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="card">
+      <h2><span class="icon">🎓</span> Education</h2>
+      <div class="edu-item">
+        <div class="edu-degree">B.Sc. Computer Science</div>
+        <div class="edu-school">Technical University of Berlin</div>
+        <div class="edu-meta">2014 – 2018 · Thesis: "Optimizing Graph Query Performance in Distributed Systems"</div>
+      </div>
+    </section>
+
+  </div><!-- /main-col -->
+
+  <!-- Right sidebar -->
+  <aside class="sidebar">
+
+    <!-- Skills -->
+    <div id="skills" class="card">
+      <h2><span class="icon">🛠️</span> Skills</h2>
+
+      <div class="skill-group">
+        <div class="skill-group-label">Languages</div>
+        <div class="skills-list">
+          <span class="skill-badge">TypeScript</span>
+          <span class="skill-badge">JavaScript</span>
+          <span class="skill-badge">Python</span>
+          <span class="skill-badge">SQL</span>
+          <span class="skill-badge">HTML/CSS</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-label">Frontend</div>
+        <div class="skills-list">
+          <span class="skill-badge">React</span>
+          <span class="skill-badge">Vue.js</span>
+          <span class="skill-badge">Next.js</span>
+          <span class="skill-badge">Tailwind CSS</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-label">Backend</div>
+        <div class="skills-list">
+          <span class="skill-badge">Node.js</span>
+          <span class="skill-badge">Express</span>
+          <span class="skill-badge">Django</span>
+          <span class="skill-badge">GraphQL</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-label">DevOps & Cloud</div>
+        <div class="skills-list">
+          <span class="skill-badge">Docker</span>
+          <span class="skill-badge">Kubernetes</span>
+          <span class="skill-badge">AWS</span>
+          <span class="skill-badge">GitHub Actions</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-label">Databases</div>
+        <div class="skills-list">
+          <span class="skill-badge">PostgreSQL</span>
+          <span class="skill-badge">MySQL</span>
+          <span class="skill-badge">MongoDB</span>
+          <span class="skill-badge">Redis</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="card">
+      <h2><span class="icon">📬</span> Contact</h2>
+      <ul class="contact-list">
+        <li>
+          <span class="contact-icon">✉️</span>
+          <a href="mailto:lars@example.com">lars@example.com</a>
+        </li>
+        <li>
+          <span class="contact-icon">🐙</span>
+          <a href="https://github.com/Lars263506" target="_blank" rel="noopener">github.com/Lars263506</a>
+        </li>
+        <li>
+          <span class="contact-icon">💼</span>
+          <a href="https://linkedin.com/in/lars" target="_blank" rel="noopener">linkedin.com/in/lars</a>
+        </li>
+        <li>
+          <span class="contact-icon">📍</span>
+          <span>Berlin, Germany</span>
+        </li>
+        <li>
+          <span class="contact-icon">🌐</span>
+          <span>German &amp; English</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Certifications -->
+    <div class="card">
+      <h2><span class="icon">🏅</span> Certifications</h2>
+      <div class="exp-item" style="margin-bottom:0;padding-bottom:0;border-bottom:none;">
+        <div class="exp-role" style="font-size:0.9rem;">AWS Certified Developer</div>
+        <div class="exp-company">Associate · 2023</div>
+      </div>
+    </div>
+
+  </aside>
+</main>
+
+<footer>
+  <p>© 2024 Lars · Built with ❤️ · <button class="btn-link" onclick="document.getElementById('chat-panel').classList.remove('hidden')">Ask the AI about my CV</button></p>
+</footer>
+
+<!-- ── AI Chat widget ── -->
+<button id="chat-toggle" title="Ask AI about Lars's CV" aria-label="Open AI CV assistant">🤖</button>
+
+<div id="chat-panel" class="hidden" role="dialog" aria-label="AI CV assistant">
+  <div class="chat-header">
+    <div class="chat-header-icon">🤖</div>
+    <div class="chat-header-text">
+      <h3>CV Assistant</h3>
+      <p>Ask me anything about Lars's CV</p>
+    </div>
+  </div>
+
+  <div class="chat-api-notice">
+    ℹ️ This chat uses the OpenAI API. Your key is stored locally in your browser and never sent to any server other than OpenAI.
+  </div>
+
+  <div id="api-setup-row" class="chat-api-setup">
+    <input
+      id="api-key-input"
+      type="password"
+      placeholder="Enter your OpenAI API key…"
+      autocomplete="off"
+      spellcheck="false"
+    />
+    <button id="api-key-save">Save</button>
+  </div>
+
+  <div id="chat-messages">
+    <div class="msg msg-bot">
+      👋 Hi! I'm Lars's CV assistant. Ask me about his experience, skills, or education!
+    </div>
+  </div>
+
+  <div id="chat-suggestions" class="chat-suggestions">
+    <button class="suggestion-chip">What are Lars's main skills?</button>
+    <button class="suggestion-chip">Tell me about his work experience</button>
+    <button class="suggestion-chip">What is his education?</button>
+    <button class="suggestion-chip">What technologies does he know?</button>
+  </div>
+
+  <div class="chat-input-row">
+    <textarea
+      id="chat-input"
+      placeholder="Ask about Lars's CV…"
+      rows="1"
+      autocomplete="off"
+      spellcheck="false"
+    ></textarea>
+    <button id="chat-send" title="Send">➤</button>
+  </div>
+</div>
+
+<style>
+.btn-link {
+  background: none;
+  border: none;
+  color: var(--primary);
+  cursor: pointer;
+  font-size: inherit;
+  text-decoration: underline;
+  padding: 0;
+}
+</style>
+
+<script src="script.js"></script>
+</body>
+</html>
